@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Space Mono', monospace;
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     display: flex;
@@ -42,6 +42,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+#content {
+    width: 100vw;
 }
 
 #bill-container {
@@ -86,3 +90,54 @@ h3 {
 .input:focus {
     outline: 2px solid hsl(172, 67%, 45%);
 }
+
+#button-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.tipBtn {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    width: 35%;
+    padding: 5px 40px;
+    margin: 10px 10px;
+    background-color:hsl(183, 100%, 15%);
+    color:hsl(189, 41%, 97%);
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 5px;
+}
+
+.tipBtn:hover {
+    cursor: pointer;
+}
+
+#tipBtnInput {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    width: 76.250px;
+    padding: 10px 0;
+    padding-left: 45px;
+    padding-right: 10px;
+    margin: 10px 10px;
+    height: 32px;
+    border: none;
+    border-radius: 2pt;
+}
+
+#tipBtnInput:focus {
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
+#tipBtnInput::placeholder {
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+}
+
