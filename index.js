@@ -14,5 +14,15 @@ tipBtn.forEach(function (item) {
             console.log(true)
             document.querySelector('#tip-amount').textContent = (billInput.value * .10).toFixed(2)
         }
+
+        if (this.getAttribute('id') === 'fifteen-percent') {
+            console.log(true)
+            document.querySelector('#tip-amount').textContent = (billInput.value * .15).toFixed(2)
+        }
+
+        if (this.getAttribute('id') === 'twentyFive-percent') {
+            console.log(true)
+            document.querySelector('#tip-amount').textContent = (billInput.value * .25).toFixed(2)
+        }
     })
 })
