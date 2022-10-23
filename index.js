@@ -24,5 +24,10 @@ tipBtn.forEach(function (item) {
             console.log(true)
             document.querySelector('#tip-amount').textContent = (billInput.value * .25).toFixed(2)
         }
+
+        if (this.getAttribute('id') === 'fifty-percent') {
+            console.log(true)
+            document.querySelector('#tip-amount').textContent = (billInput.value * .5).toFixed(2)
+        }
     })
 })
