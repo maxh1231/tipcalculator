@@ -19,11 +19,13 @@ body {
     background-color: hsl(185, 41%, 84%);
 }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
+.attribution {
+    font-size: 11px;
+    text-align: center;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
 #logo-container {
@@ -71,7 +73,7 @@ h3 {
     margin-top: 12px;
 }
 
- .input {
+.input {
     width: 80vw;
     height: 40px;
     display: block;
@@ -98,22 +100,7 @@ h3 {
     justify-content: center;
 }
 
-.tipBtn {
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
-    font-weight: 700;
-    width: 35%;
-    padding: 5px 40px;
-    margin: 10px 10px;
-    background-color:hsl(183, 100%, 15%);
-    color:hsl(189, 41%, 97%);
-    border: 1px solid hsl(183, 100%, 15%);
-    border-radius: 5px;
-}
 
-.tipBtn:hover {
-    cursor: pointer;
-}
 
 #tipBtnInput {
     color: hsl(183, 100%, 15%);
@@ -172,7 +159,7 @@ h3 {
     width: 100%;
     font-size: 24px;
     padding: 5px 0;
-    color:hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -188,7 +175,7 @@ h3 {
 }
 
 .person {
-    color:hsl(185, 41%, 84%);
+    color: hsl(185, 41%, 84%);
     margin-top: 0;
 }
 
@@ -199,5 +186,34 @@ h3 {
     margin-right: 20px;
 }
 
+.tipBtnDeactive {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    width: 35%;
+    padding: 5px 40px;
+    margin: 10px 10px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 5px;
+}
 
+.tipBtnActive {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    width: 35%;
+    padding: 5px 40px;
+    margin: 10px 10px;
+    background-color: #26c0ab;
+    color: hsl(189, 41%, 97%);
+    border: 1px solid #26c0ab;
+    border-radius: 5px;
+    border-color: '';
+}
 
+.tipBtnDeactive:hover,
+.tipBtnActive:hover {
+    cursor: pointer;
+}
