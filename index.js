@@ -9,5 +9,10 @@ tipBtn.forEach(function (item) {
             console.log(true)
             document.querySelector('#tip-amount').textContent = (billInput.value * .05).toFixed(2)
         }
+
+        if (this.getAttribute('id') === 'ten-percent') {
+            console.log(true)
+            document.querySelector('#tip-amount').textContent = (billInput.value * .10).toFixed(2)
+        }
     })
 })
