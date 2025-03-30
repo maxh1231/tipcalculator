@@ -1,6 +1,5 @@
 let billInput = document.getElementById('bill-input');
 let tipBtn = document.querySelectorAll('.tipBtnDeactive');
-document.querySelector('#people-input').value = 1;
 
 console.log(tipBtn)
 
