@@ -7,6 +7,13 @@
 - Strong cyan: #26c0ab
 */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 html {
     font-family: 'Space Mono', monospace;
 }
@@ -27,22 +34,26 @@ body {
 }
 
 #container {
-    box-sizing: border-box;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 100%;
-    padding: 0 15px
+    padding: 25px 25px;
+    width: 375px;
+
+    overflow: hidden;
 }
 
-#content {
+.input-container {
     width: 100%;
 }
 
 h3 {
     color: #00494d;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* .input-img {
@@ -56,10 +67,11 @@ h3 {
 } */
 
 #bill-input,
-#people-input {}
+#people-input {
+    width: 100%;
+}
 
 input {
-    box-sizing: border-box;
     text-align: right;
     font-family: 'Space Mono', monospace;
     color: #00494d !important;
@@ -69,8 +81,8 @@ input {
     border: none;
     border-radius: 5px;
     font-weight: bold;
-    padding: none;
     padding-right: 10px;
+    min-width: 0;
 }
 
 input:focus {
@@ -82,21 +94,31 @@ input::placeholder {
     text-align: right;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .button-row {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .tip-btn {
     font-size: 24px;
     font-weight: bold;
-    min-width: 146px;
-    height: 48px;
-    margin: 10px 10px;
+    height: 46px;
     border-radius: 5px;
     border: none;
     color: #f4fafa;
+    flex: 1;
 }
+
+.tip-btn:nth-child(odd) {}
+
+.tip-btn:nth-child(even) {}
 
 .deactive {
     background-color: #00494d;
@@ -115,7 +137,6 @@ input::placeholder {
 #result-container {
     width: 100%;
     background-color: #00494d;
-    margin: 40px 0px;
     border: 1px solid #00494d;
     border-radius: 15px;
 }
@@ -124,20 +145,6 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    /* padding: 20px 20px; */
-    /* padding-bottom: none; */
-}
-
-.tip-amount:nth-child(1) {
-    padding-top: 20px;
-}
-
-#resetBtn-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    margin: 0 20px;
 }
 
 #resetBtn {
@@ -156,22 +163,36 @@ input::placeholder {
     color: white;
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 0;
 }
 
 .person {
     color: #c5e4e7;
-    margin-top: 0;
 }
 
 .amount {
     color: #26c0ab;
     font-size: 32px;
     font-weight: 700;
-    margin-right: 20px;
 }
 
 .tipBtnDeactive:hover,
 .active:hover {
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 608px;
+    }
+}
+
+@media (min-width: 1408px) {
+    #container {
+        width: 920px;
+        flex-direction: row;
+    }
+
+    .side-by-side {
+        display: flex;
+    }
 }
