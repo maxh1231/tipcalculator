@@ -29,7 +29,10 @@
 
     <section id="container">
       <div class="input-container">
-        <h3 class="text-5">Bill</h3>
+        <div class="error-container">
+          <h3 class="text-5">Bill</h3>
+          <span>Can't be zero</span>
+        </div>
         <input class="text-3" type="text" id="bill-input" placeholder="0" />
 
         <div class="tip-btn-container">
@@ -69,7 +72,10 @@
           />
         </div>
 
-        <h3 class="text-5">Number of People</h3>
+        <div class="error-container">
+          <h3 class="text-5">Number of People</h3>
+          <span class="text-5">Can't be zero</span>
+        </div>
         <input type="text" id="people-input" placeholder="1" class="text-3" />
       </div>
 
@@ -90,7 +96,7 @@
           <span id="per-person" class="amount">$0.00</span>
         </div>
 
-        <button id="resetBtn" class="text-4">RESET</button>
+        <button id="resetBtn" disabled="disabled" class="text-4">RESET</button>
       </div>
     </section>
 
