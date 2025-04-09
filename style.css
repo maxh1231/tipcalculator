@@ -21,30 +21,30 @@
   --green-400: #26c2ae;
   --green-200: #9fe8df;
   --orange-400: #e17052;
+}
 
-  --text-size-1: 46px;
-  --text-height-1: 71px;
-  --text-spacing-1: -1px;
+.text-3 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
 
-  --text-size-2: 32px;
-  --text-height-2: 47px;
-  --text-spacing-2: -0.67px;
+.text-4 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
 
-  --text-size-3: 24px;
-  --text-height-3: 36px;
-  --text-spacing-3: 0px;
+.text-5 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
 
-  --text-size-4: 20px;
-  --text-height-4: 30px;
-  --text-spacing-4: 0px;
-
-  --text-size-5: 16px;
-  --text-height-5: 24px;
-  --text-spacing-5: 0px;
-
-  --text-size-6: 13px;
-  --text-height-6: 19px;
-  --text-spacing-6: 0px;
+.text-6 {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0px;
 }
 
 * {
@@ -53,12 +53,13 @@
   padding: 0;
   border: 0;
   font-family: "Space Mono", bold;
+  font-weight: bold;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: #c5e4e7;
+  background-color: var(--grey-200);
   height: 100vh;
   justify-content: start;
   align-items: center;
@@ -87,15 +88,15 @@ body {
 }
 
 h3 {
-  color: #5e7a7d;
+  color: var(--grey-500);
   margin-bottom: 10px;
   text-align: left;
 }
 
 input {
   text-align: right;
-  color: #00474b !important;
-  background-color: #f4fafa;
+  color: var(--green-900) !important;
+  background-color: var(--grey-50);
   height: 48px;
   border-radius: 5px;
   width: 100%;
@@ -115,12 +116,17 @@ input {
   background-size: 13px 16px;
 }
 
+#bill-input::placeholder,
+#people-input::placeholder {
+  opacity: 35%;
+}
+
 input:focus {
-  outline: 2px solid #26c0ab;
+  outline: 2px solid var(--green-400);
 }
 
 input::placeholder {
-  color: #7f9c9f;
+  color: var(--green-900);
   text-align: right;
 }
 
@@ -139,8 +145,12 @@ input::placeholder {
   width: 147px;
   height: 48px;
   border-radius: 5px;
-  color: #f4fafa;
+  color: white;
   margin: 8px 0px;
+}
+
+.tip-btn::placeholder {
+  color: var(--grey-550);
 }
 
 .deactive {
@@ -159,7 +169,7 @@ input::placeholder {
 
 #result-container {
   width: 100%;
-  background-color: #00494d;
+  background-color: var(--green-900);
   border-radius: 15px;
   height: 100%;
   margin-top: 30px;
@@ -179,23 +189,22 @@ input::placeholder {
 #resetBtn {
   width: 100%;
   padding: 5px 0;
-  color: #00494d;
-  background-color: #26c0ab;
-  border: 1px solid #00494d;
+  color: var(--green-900);
+  background-color: var(--green-400);
   border-radius: 10px;
   margin-top: auto;
 }
 
-.header {
+.result-label {
   color: white;
 }
 
-.person {
-  color: #c5e4e7;
+.per-person {
+  color: var(--grey-400);
 }
 
 .amount {
-  color: #26c0ab;
+  color: var(--green-400);
 }
 
 .tipBtnDeactive:hover,
@@ -203,7 +212,13 @@ input::placeholder {
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (width < 768px) {
+  .amount {
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: -0.67px;
+  }
+
   .tip-btn:nth-child(even) {
     margin-right: 4px;
   }
@@ -213,7 +228,13 @@ input::placeholder {
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
+  .amount {
+    font-size: 46px;
+    line-height: 71px;
+    letter-spacing: -1px;
+  }
+
   #container {
     width: 608px;
     padding: 50px 74px;
