@@ -7,6 +7,46 @@
 - Strong cyan: #26c0ab
 */
 
+:root {
+  --grey-600: #3d6666;
+  --grey-550: #547878;
+  --grey-500: #5e7a7d;
+  --grey-400: #7f9d9f;
+  --grey-300: #9ebbbd;
+  --grey-200: #c5e4e7;
+  --grey-50: #f3f9fa;
+  --green-900: #00474b;
+  --green-800: #085c61;
+  --green-750: #0d686d;
+  --green-400: #26c2ae;
+  --green-200: #9fe8df;
+  --orange-400: #e17052;
+
+  --text-size-1: 46px;
+  --text-height-1: 71px;
+  --text-spacing-1: -1px;
+
+  --text-size-2: 32px;
+  --text-height-2: 47px;
+  --text-spacing-2: -0.67px;
+
+  --text-size-3: 24px;
+  --text-height-3: 36px;
+  --text-spacing-3: 0px;
+
+  --text-size-4: 20px;
+  --text-height-4: 30px;
+  --text-spacing-4: 0px;
+
+  --text-size-5: 16px;
+  --text-height-5: 24px;
+  --text-spacing-5: 0px;
+
+  --text-size-6: 13px;
+  --text-height-6: 19px;
+  --text-spacing-6: 0px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,21 +88,16 @@ body {
 
 h3 {
   color: #5e7a7d;
-  font-size: 16px;
-  font-weight: 700;
   margin-bottom: 10px;
   text-align: left;
 }
 
 input {
   text-align: right;
-  font-family: "Space Mono", monospace;
   color: #00474b !important;
   background-color: #f4fafa;
-  font-size: 24px;
   height: 48px;
   border-radius: 5px;
-  font-weight: bold;
   width: 100%;
   text-indent: 10px;
   direction: rtl;
@@ -102,8 +137,6 @@ input::placeholder {
 
 .tip-btn {
   width: 147px;
-  font-size: 24px;
-  font-weight: bold;
   height: 48px;
   border-radius: 5px;
   color: #f4fafa;
@@ -145,12 +178,9 @@ input::placeholder {
 
 #resetBtn {
   width: 100%;
-  font-size: 24px;
   padding: 5px 0;
   color: #00494d;
   background-color: #26c0ab;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
   border: 1px solid #00494d;
   border-radius: 10px;
   margin-top: auto;
@@ -158,8 +188,6 @@ input::placeholder {
 
 .header {
   color: white;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 .person {
@@ -168,8 +196,6 @@ input::placeholder {
 
 .amount {
   color: #26c0ab;
-  font-size: 32px;
-  font-weight: 700;
 }
 
 .tipBtnDeactive:hover,
