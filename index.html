@@ -29,16 +29,18 @@
 
         <section class="tip-calculator flex-col">
             <div class="tip-config-container">
-                <div class="input-error-container">
-                    <h3 class="text-5">Bill</h3>
-                    <span>Can't be zero</span>
+                <div class="input-error-container flex-col">
+                    <div class="flex-row">
+                        <h3 class="text-5">Bill</h3>
+                        <span class="text-5">Can't be zero</span>
+                    </div>
+                    <input
+                        class="text-3"
+                        type="text"
+                        id="bill-amount-input"
+                        placeholder="0"
+                    />
                 </div>
-                <input
-                    class="text-3"
-                    type="text"
-                    id="bill-amount-input"
-                    placeholder="0"
-                />
 
                 <div class="tip-btn-container">
                     <h3 class="text-5">Select Tip %</h3>
@@ -77,16 +79,18 @@
                     />
                 </div>
 
-                <div class="input-error-container flex-row">
-                    <h3 class="text-5">Number of People</h3>
-                    <span class="text-5">Can't be zero</span>
+                <div class="input-error-container flex-col">
+                    <div class="flex-row">
+                        <h3 class="text-5">Number of People</h3>
+                        <span class="text-5">Can't be zero</span>
+                    </div>
+                    <input
+                        type="text"
+                        id="num-people-input"
+                        placeholder="1"
+                        class="text-3"
+                    />
                 </div>
-                <input
-                    type="text"
-                    id="num-people-input"
-                    placeholder="1"
-                    class="text-3"
-                />
             </div>
 
             <div class="result-container flex-col">
@@ -98,7 +102,7 @@
                     <span id="tip-per-person" class="result-amount">$0.00</span>
                 </div>
 
-                <div class="result-category">
+                <div class="result-category flex-row">
                     <div>
                         <p class="result-category-label text-5">Total</p>
                         <p class="result-per-person text-6">/ person</p>
