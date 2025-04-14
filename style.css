@@ -202,7 +202,7 @@ input[type="text"] {
 
 .input-error-container span {
     color: var(--orange-400);
-    display: none;
+    /* display: none; */
 }
 
 .error-outline {
