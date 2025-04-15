@@ -42,7 +42,7 @@ const validateTextInput = (input) => {
     } else if (parseInt(input.value) < 0) {
         toggleInputError(input, "Can't be negative");
         return false;
-    } else if (isNaN(parseInt(input.value))) {
+    } else if (isNaN(input.value)) {
         toggleInputError(input, 'Must be a number');
         return false;
     }
